@@ -27,7 +27,7 @@ class MoviesController < ApplicationController
       session[:sort] = sort
       session[:ratings] = @ratings_to_show
       # specifically, when resetting ratings = {}, session == all ratings
-      if !params[:ratings] and !params[:sort]
+      if !params[:ratings] and !params[:sort] and params[:home]
         session[:ratings] = Hash[@all_ratings.map {|rating| [rating, 1]}]
       end
       redirect_to sort: session[:sort], ratings: session[:ratings] and return
