@@ -1,0 +1,2 @@
+https://github.com/vermouthdky/rottenpotatoes-rails-intro
+http://vast-dusk-21765.herokuapp.com/
